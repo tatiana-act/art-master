@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: #2D1810;
+    background: linear-gradient(
+            135deg,
+            #FFF8F0 0%,
+            #FFECD1 50%,
+            #FFD6A3 100%
+    );
+    min-height: 100vh;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #F4A460 100%);
+}
+
+.text-dark {
+    color: #2D1810;
+}
+
+.text-medium {
+    color: #5C3305;
+}
+
+.bg-cream {
+    background-color: #FFF8F0;
+}
+
+.bg-light-warm {
+    background-color: #FFECD1;
+}
