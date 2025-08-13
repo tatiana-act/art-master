@@ -26,8 +26,10 @@ const Footer = () => {
                         <ul className="space-y-2">
                             <li><Link href="/wool-painting-adults" className="text-gray-300 hover:text-white transition-colors">Wool Painting Adults</Link></li>
                             <li><Link href="/wool-painting-kids" className="text-gray-300 hover:text-white transition-colors">Wool Painting Kids</Link></li>
-                            <li><Link href="/macrame" className="text-gray-300 hover:text-white transition-colors">Macrame</Link></li>
-                            <li><Link href="/kids-projects" className="text-gray-300 hover:text-white transition-colors">Kids Projects</Link></li>
+                            <li><Link href="/macrame-adults" className="text-gray-300 hover:text-white transition-colors">Macrame</Link></li>
+                            <li><Link href="/macrame-kids" className="text-gray-300 hover:text-white transition-colors">Macrame Kids</Link></li>
+                            <li><Link href="/family-workshop" className="text-gray-300 hover:text-white transition-colors">Family Workshops</Link></li>
+                            <li><Link href="/workshop-kids" className="text-gray-300 hover:text-white transition-colors">Kids workshops</Link></li>
                         </ul>
                     </div>
 

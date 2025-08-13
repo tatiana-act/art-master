@@ -1,13 +1,19 @@
-import Image from 'next/image'
+'use client'
+
+import ProjectGallery from "@/components/ProjectGallery";
 
 const Macrame = () => {
     const projects = [
-        { title: 'Wall Hanging', image: '/images/macrame-1.jpg' },
-        { title: 'Plant Hanger', image: '/images/macrame-2.jpg' },
-        { title: 'Dream Catcher', image: '/images/macrame-3.jpg' },
-        { title: 'Table Runner', image: '/images/macrame-4.jpg' },
-        { title: 'Jewelry Holder', image: '/images/macrame-5.jpg' },
-        { title: 'Room Divider', image: '/images/macrame-6.jpg' }
+        { title: 'Wall Hanging', image: '/images/macrame-adult-1.jpg' },
+        { title: 'Plant Hanger', image: '/images/macrame-adult-2.jpg' },
+        { title: 'Dream Catcher', image: '/images/macrame-adult-3.jpg' },
+        { title: 'Table Runner', image: '/images/macrame-adult-4.jpg' },
+        { title: 'Jewelry Holder', image: '/images/macrame-adult-5.jpg' },
+        { title: 'Room Divider', image: '/images/macrame-adult-6.jpg' },
+        { title: 'Room Divider', image: '/images/macrame-adult-7.jpg' },
+        { title: 'Room Divider', image: '/images/macrame-adult-8.jpg' },
+        { title: 'Room Divider', image: '/images/macrame-adult-9.jpg' },
+        { title: 'Room Divider', image: '/images/macrame-adult-10.jpg' }
     ]
 
     const knots = [
@@ -58,18 +64,7 @@ const Macrame = () => {
                 </div>
 
                 <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Popular Macrame Projects</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.map((project, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                            <div className="h-64 bg-gradient-to-br from-amber-200 to-orange-300 flex items-center justify-center">
-                                <span className="text-gray-700 font-medium">Macrame {project.title}</span>
-                            </div>
-                            <div className="p-4">
-                                <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                <ProjectGallery projects={projects} />
 
                 <div className="mt-12 text-center">
                     <div className="bg-amber-50 rounded-lg p-8">

@@ -1,22 +1,17 @@
 'use client'
 import ProjectGallery from '@/components/ProjectGallery' // Adjust path if needed
 
-const WoolPaintingKids = () => {
+const WorkshopFamily = () => {
     const projects = [
-        { title: 'Mountain Landscape', image: '/images/watercolor-woolpainting-kids-1.jpg' },
-        { title: 'Abstract Sunset', image: '/images/watercolor-woolpainting-kids-2.jpg' },
-        { title: 'Forest Scene', image: '/images/watercolor-woolpainting-kids-3.jpg' },
-        { title: 'Ocean Waves', image: '/images/watercolor-woolpainting-kids-4.jpg' },
-        { title: 'Desert Dawn 1', image: '/images/watercolor-woolpainting-kids-5.jpg' },
-        { title: 'Desert Dawn 2', image: '/images/watercolor-woolpainting-kids-6.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/watercolor-woolpainting-kids-7.jpg' }
+        { title: 'Mountain Landscape', image: '/images/family-workshop-1.jpg' },
+        { title: 'Abstract Sunset', image: '/images/family-workshop-2.jpg' }
     ]
 
     return (
         <div className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-dark mb-6">Wool Painting for Kids</h1>
+                    <h1 className="text-4xl font-bold text-dark mb-6">Family workshops</h1>
                     <p className="text-xl text-medium max-w-3xl mx-auto mb-8">
                         Let your child's creativity soar with colorful wool painting projects! Safe, fun, and designed
                         specifically for young artists to develop fine motor skills and artistic expression.
@@ -42,9 +37,7 @@ const WoolPaintingKids = () => {
                     </div>
                 </div>
 
-                <ProjectGallery projects={projects} caption="Sample projects" />
-
-                <ProjectGallery projects={projects} caption="Making Magic" />
+                <ProjectGallery projects={projects} />
 
                 <div className="mt-12 text-center">
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">
@@ -62,4 +55,4 @@ const WoolPaintingKids = () => {
     )
 }
 
-export default WoolPaintingKids;
+export default WorkshopFamily;

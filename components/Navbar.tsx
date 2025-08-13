@@ -23,11 +23,17 @@ const Navbar = () => {
                         <Link href="/wool-painting-kids" className="text-medium hover:text-primary font-medium transition-colors">
                             Wool Painting Kids
                         </Link>
-                        <Link href="/macrame" className="text-medium hover:text-primary font-medium transition-colors">
-                            Macrame
+                        <Link href="/macrame-adults" className="text-medium hover:text-primary font-medium transition-colors">
+                            Macrame Adults
                         </Link>
-                        <Link href="/kids-projects" className="text-medium hover:text-primary font-medium transition-colors">
-                            Kids Projects
+                        <Link href="/macrame-kids" className="text-medium hover:text-primary font-medium transition-colors">
+                            Macrame Kids
+                        </Link>
+                        <Link href="/family-workshop" className="text-medium hover:text-primary font-medium transition-colors">
+                            Family Workshops
+                        </Link>
+                        <Link href="/workshop-kids" className="text-medium hover:text-primary font-medium transition-colors">
+                            Kids Workshops
                         </Link>
                         <Link href="/faq" className="text-medium hover:text-primary font-medium transition-colors">
                             FAQ
@@ -60,10 +66,16 @@ const Navbar = () => {
                             <Link href="/wool-painting-kids" className="block px-3 py-2 text-medium hover:text-primary font-medium">
                                 Wool Painting Kids
                             </Link>
-                            <Link href="/macrame" className="block px-3 py-2 text-medium hover:text-primary font-medium">
-                                Macrame
+                            <Link href="/macrame-adults" className="block px-3 py-2 text-medium hover:text-primary font-medium">
+                                Macrame Adults
                             </Link>
-                            <Link href="/kids-projects" className="block px-3 py-2 text-medium hover:text-primary font-medium">
+                            <Link href="/macrame-kids" className="block px-3 py-2 text-medium hover:text-primary font-medium">
+                                Macrame Kids
+                            </Link>
+                            <Link href="/workshop-kids" className="block px-3 py-2 text-medium hover:text-primary font-medium">
+                                Kids Projects
+                            </Link>
+                            <Link href="/family-workshop" className="block px-3 py-2 text-medium hover:text-primary font-medium">
                                 Kids Projects
                             </Link>
                             <Link href="/faq" className="block px-3 py-2 text-medium hover:text-primary font-medium">

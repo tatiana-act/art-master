@@ -7,25 +7,37 @@ const FeaturedSections = () => {
             title: 'Wool Painting for Adults',
             description: 'Therapeutic and beautiful art form using natural wool fibers',
             href: '/wool-painting-adults',
-            image: '/images/wool-adult-1.jpg'
+            image: '/images/watercolor-woolpainting-1.jpg'
         },
         {
             title: 'Wool Painting for Kids',
             description: 'Fun and engaging wool art projects designed for children',
             href: '/wool-painting-kids',
-            image: '/images/wool-kids-1.jpg'
+            image: '/images/watercolor-woolpainting-kids-1.jpg'
         },
         {
             title: 'Macrame',
             description: 'Learn the ancient art of knotting to create stunning decorative pieces',
-            href: '/macrame',
-            image: '/images/macrame-1.jpg'
+            href: '/macrame-adults',
+            image: '/images/macrame-adult-1.jpg'
         },
         {
-            title: 'Kids Art Projects',
+            title: 'Macrame Kids',
+            description: 'Fun and engaging macrame projects designed for children',
+            href: '/macrame-kids',
+            image: '/images/macrame-kids-1.jpg'
+        },
+        {
+            title: 'Family Workshops',
+            description: 'Creative projects for the whole family',
+            href: '/family-workshop',
+            image: '/images/family-workshop-1.jpg'
+        },
+        {
+            title: 'Kids Workshops',
             description: 'Creative and educational craft projects to spark imagination',
-            href: '/kids-projects',
-            image: '/images/kids-craft-1.jpg'
+            href: '/workshop-kids',
+            image: '/images/kids-workshop-1.jpg'
         }
     ]
 
@@ -41,14 +53,18 @@ const FeaturedSections = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {sections.map((section, index) => (
                         <Link key={index} href={section.href} className="group">
                             <div className="bg-cream rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-warm-200">
-                                <div className="h-48 bg-warm-200 relative overflow-hidden">
-                                    <div className="w-full h-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center">
-                                        <span className="text-white text-sm font-medium">Image Placeholder</span>
-                                    </div>
+                                <div className="relative aspect-square">
+                                <Image
+                                    src={section.image}
+                                    alt={section.title}
+                                    width={400}
+                                    height={400}
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                />
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold text-dark mb-2 group-hover:text-primary transition-colors">

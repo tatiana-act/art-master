@@ -1,5 +1,5 @@
-import WoolPaintingAdults from '@/components/WoolPaintingAdults'
+import WoolPaintingAdults2 from '@/components/WoolPaintingAdults2'
 
 export default function WoolPaintingAdultsPage() {
-    return <WoolPaintingAdults />
+    return <WoolPaintingAdults2 />
 }

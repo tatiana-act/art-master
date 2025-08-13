@@ -19,7 +19,7 @@ const Hero = () => {
                             Explore Adult Classes
                         </Link>
                         <Link
-                            href="/kids-projects"
+                            href="/wool-painting-kids"
                             className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
                         >
                             Kids Activities
