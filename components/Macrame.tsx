@@ -64,7 +64,10 @@ const Macrame = () => {
                 </div>
 
                 <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Popular Macrame Projects</h2>
-                <ProjectGallery projects={projects} />
+
+                <ProjectGallery projects={projects} caption="Featured Works" />
+
+                <ProjectGallery projects={projects} caption="Hands at Work" />
 
                 <div className="mt-12 text-center">
                     <div className="bg-amber-50 rounded-lg p-8">

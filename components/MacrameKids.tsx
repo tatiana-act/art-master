@@ -45,7 +45,9 @@ const MacrameKids = () => {
                     </div>
                 </div>
 
-                <ProjectGallery projects={projects} />
+                <ProjectGallery projects={projects} caption="Featured Works" />
+
+                <ProjectGallery projects={projects} caption="Crafting Journey" />
 
                 <div className="mt-12 text-center">
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">

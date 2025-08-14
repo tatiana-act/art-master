@@ -6,18 +6,32 @@ const WorkshopKids = () => {
         { title: 'Mountain Landscape', image: '/images/kids-workshop-1.jpg' },
         { title: 'Abstract Sunset', image: '/images/kids-workshop-2.jpg' },
         { title: 'Forest Scene', image: '/images/kids-workshop-3.jpg' },
-        { title: 'Ocean Waves', image: '/images/kids-workshop-4.jpg' },
         { title: 'Desert Dawn 1', image: '/images/kids-workshop-5.jpg' },
         { title: 'Desert Dawn 2', image: '/images/kids-workshop-6.jpg' },
         { title: 'Desert Dawn 3', image: '/images/kids-workshop-7.jpg' },
+        { title: 'Forest Scene', image: '/images/kids-workshop-13.jpg' },
+        { title: 'Ocean Waves', image: '/images/kids-workshop-14.jpg' },
+        { title: 'Desert Dawn 1', image: '/images/kids-workshop-15.jpg' },
+        { title: 'Abstract Sunset', image: '/images/kids-workshop-17.jpg' },
+    ]
+
+    const inMotion = [
+        { title: 'Ocean Waves', image: '/images/kids-workshop-4.jpg' },
         { title: 'Desert Dawn 3', image: '/images/kids-workshop-8.jpg' },
         { title: 'Desert Dawn 3', image: '/images/kids-workshop-9.jpg' },
         { title: 'Desert Dawn 3', image: '/images/kids-workshop-10.jpg' },
         { title: 'Mountain Landscape', image: '/images/kids-workshop-11.jpg' },
         { title: 'Abstract Sunset', image: '/images/kids-workshop-12.jpg' },
-        { title: 'Forest Scene', image: '/images/kids-workshop-13.jpg' },
-        { title: 'Ocean Waves', image: '/images/kids-workshop-14.jpg' },
-        { title: 'Desert Dawn 1', image: '/images/kids-workshop-15.jpg' }
+        { title: 'Abstract Sunset', image: '/images/kids-workshop-16.jpg' }
+    ]
+
+    const benefits = [
+        'Develops creativity and imagination',
+        'Improves fine motor skills',
+        'Builds confidence and self-esteem',
+        'Encourages problem-solving',
+        'Provides sensory experiences',
+        'Enhances focus and concentration'
     ]
 
     return (
@@ -51,7 +65,8 @@ const WorkshopKids = () => {
                     </div>
                 </div>
 
-                <ProjectGallery projects={projects} />
+                <ProjectGallery projects={projects} caption="Project Gems" />
+                <ProjectGallery projects={projects} caption="Craft Process" />
 
                 <div className="mt-12 text-center">
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">

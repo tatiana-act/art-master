@@ -12,13 +12,24 @@ const WoolPaintingAdults2 = () => {
         { title: 'Desert Dawn 3', image: '/images/watercolor-woolpainting-7.jpg' },
         { title: 'Desert Dawn 4', image: '/images/watercolor-woolpainting-8.jpg' },
         { title: 'Desert Dawn 5', image: '/images/watercolor-woolpainting-9.jpg' },
-        { title: 'Desert Dawn 6', image: '/images/watercolor-woolpainting-10.jpg' },
         { title: 'Desert Dawn 7', image: '/images/watercolor-woolpainting-11.jpg' },
         { title: 'Desert Dawn 8', image: '/images/watercolor-woolpainting-12.jpg' },
         { title: 'Desert Dawn 9', image: '/images/watercolor-woolpainting-13.jpg' },
-        { title: 'Desert Dawn 10', image: '/images/watercolor-woolpainting-14.jpg' },
         { title: 'Desert Dawn 11', image: '/images/watercolor-woolpainting-15.jpg' },
         { title: 'City Lights', image: '/images/watercolor-woolpainting-16.jpg' }
+    ]
+
+    const projectsInAction = [
+        { title: 'Desert Dawn 6', image: '/images/watercolor-woolpainting-10.jpg' },
+        { title: 'Desert Dawn 10', image: '/images/watercolor-woolpainting-14.jpg' },
+        { title: 'Desert Dawn 3', image: '/images/watercolor-woolpainting-17.jpg' },
+        { title: 'Desert Dawn 4', image: '/images/watercolor-woolpainting-18.jpg' },
+        { title: 'Desert Dawn 5', image: '/images/watercolor-woolpainting-19.jpg' },
+        { title: 'Desert Dawn 6', image: '/images/watercolor-woolpainting-20.jpg' },
+        { title: 'Desert Dawn 6', image: '/images/watercolor-woolpainting-21.jpg' },
+        { title: 'Desert Dawn 6', image: '/images/watercolor-woolpainting-22.jpg' },
+        { title: 'Desert Dawn 6', image: '/images/watercolor-woolpainting-23.jpg' },
+        { title: 'City Lights', image: '/images/watercolor-woolpainting-24.jpg' }
     ]
 
     return (
@@ -52,9 +63,9 @@ const WoolPaintingAdults2 = () => {
                     </div>
                 </div>
 
-                <ProjectGallery projects={projects} caption="Sample projects" />
-
-                <ProjectGallery projects={projects} caption="Crafting Journey" />
+                <ProjectGallery projects={projects} caption="Art Samples" />
+                <br />
+                <ProjectGallery projects={projectsInAction} caption="Crafting Journey" />
 
                 <div className="mt-12 text-center">
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">

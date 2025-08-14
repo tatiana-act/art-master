@@ -4,12 +4,22 @@ import ProjectGallery from '@/components/ProjectGallery' // Adjust path if neede
 const WoolPaintingKids = () => {
     const projects = [
         { title: 'Mountain Landscape', image: '/images/watercolor-woolpainting-kids-1.jpg' },
-        { title: 'Abstract Sunset', image: '/images/watercolor-woolpainting-kids-2.jpg' },
         { title: 'Forest Scene', image: '/images/watercolor-woolpainting-kids-3.jpg' },
         { title: 'Ocean Waves', image: '/images/watercolor-woolpainting-kids-4.jpg' },
+        { title: 'Desert Dawn 3', image: '/images/watercolor-woolpainting-kids-7.jpg' },
+        { title: 'Abstract Sunset', image: '/images/watercolor-woolpainting-kids-10.jpg' },
+        { title: 'Desert Dawn 1', image: '/images/watercolor-woolpainting-kids-11.jpg' },
+        { title: 'Desert Dawn 2', image: '/images/watercolor-woolpainting-kids-12.jpg' },
+        { title: 'Desert Dawn 2', image: '/images/watercolor-woolpainting-kids-13.jpg' },
+        { title: 'Desert Dawn 2', image: '/images/watercolor-woolpainting-kids-14.jpg' }
+    ]
+
+    const projectsInAction = [
+        { title: 'Abstract Sunset', image: '/images/watercolor-woolpainting-kids-2.jpg' },
         { title: 'Desert Dawn 1', image: '/images/watercolor-woolpainting-kids-5.jpg' },
         { title: 'Desert Dawn 2', image: '/images/watercolor-woolpainting-kids-6.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/watercolor-woolpainting-kids-7.jpg' }
+        { title: 'Desert Dawn 3', image: '/images/watercolor-woolpainting-kids-8.jpg' },
+        { title: 'Desert Dawn 3', image: '/images/watercolor-woolpainting-kids-9.jpg' }
     ]
 
     return (
@@ -42,9 +52,9 @@ const WoolPaintingKids = () => {
                     </div>
                 </div>
 
-                <ProjectGallery projects={projects} caption="Sample projects" />
+                <ProjectGallery projects={projects} caption="Art Samples" />
 
-                <ProjectGallery projects={projects} caption="Making Magic" />
+                <ProjectGallery projects={projectsInAction} caption="Making Magic" />
 
                 <div className="mt-12 text-center">
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">
