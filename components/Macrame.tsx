@@ -4,16 +4,20 @@ import ProjectGallery from "@/components/ProjectGallery";
 
 const Macrame = () => {
     const projects = [
-        { title: 'Wall Hanging', image: '/images/macrame-adult-1.jpg' },
-        { title: 'Plant Hanger', image: '/images/macrame-adult-2.jpg' },
-        { title: 'Dream Catcher', image: '/images/macrame-adult-3.jpg' },
-        { title: 'Table Runner', image: '/images/macrame-adult-4.jpg' },
-        { title: 'Jewelry Holder', image: '/images/macrame-adult-5.jpg' },
-        { title: 'Room Divider', image: '/images/macrame-adult-6.jpg' },
-        { title: 'Room Divider', image: '/images/macrame-adult-7.jpg' },
-        { title: 'Room Divider', image: '/images/macrame-adult-8.jpg' },
-        { title: 'Room Divider', image: '/images/macrame-adult-9.jpg' },
-        { title: 'Room Divider', image: '/images/macrame-adult-10.jpg' }
+        { title: 'Flowerpot Cover', image: '/images/macrame-adult-5.jpg' },
+        { title: 'Tealight Cover', image: '/images/macrame-adult-1.jpg' },
+        { title: 'Earphone Case', image: '/images/macrame-adult-3.jpg' },
+        { title: 'Handmade Hairpins', image: '/images/macrame-adult-4.jpg' },
+        { title: 'Bottle Holder', image: '/images/macrame-adult-6.jpg' },
+        { title: 'Dreamcatcher', image: '/images/macrame-adult-14.jpg' },
+        { title: 'Belt', image: '/images/macrame-adult-9.jpg' },
+        { title: 'Angel', image: '/images/macrame-adult-10.jpg' },
+        { title: 'Holiday tree', image: '/images/macrame-adult-11.jpg' },
+        { title: 'Lucky Horseshoe', image: '/images/macrame-adult-15.jpg' },
+        { title: 'Boho Wall Hanging', image: '/images/macrame-adult-20.jpg' },
+        { title: 'Shopper Bag Decoration', image: '/images/macrame-adult-17.jpg' },
+        { title: 'Handmade Pet Collar', image: '/images/macrame-adult-16.jpg' },
+        { title: 'Semi-Oval Wall Hanging', image: '/images/macrame-adult-18.jpg' }
     ]
 
     const knots = [
@@ -63,11 +67,7 @@ const Macrame = () => {
                     </div>
                 </div>
 
-                <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Popular Macrame Projects</h2>
-
                 <ProjectGallery projects={projects} caption="Featured Works" />
-
-                <ProjectGallery projects={projects} caption="Hands at Work" />
 
                 <div className="mt-12 text-center">
                     <div className="bg-amber-50 rounded-lg p-8">

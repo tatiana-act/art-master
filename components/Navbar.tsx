@@ -11,31 +11,28 @@ const Navbar = () => {
                 <div className="flex justify-between h-16">
                     <div className="flex items-center">
                         <Link href="/" className="text-2xl font-bold text-primary">
-                            Art Master
+                            Art Master Tatiana
                         </Link>
                     </div>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-8">
                         <Link href="/wool-painting-adults" className="text-medium hover:text-primary font-medium transition-colors">
-                            Wool Painting Adults
+                            Wool Painting
                         </Link>
                         <Link href="/wool-painting-kids" className="text-medium hover:text-primary font-medium transition-colors">
                             Wool Painting Kids
                         </Link>
                         <Link href="/macrame-adults" className="text-medium hover:text-primary font-medium transition-colors">
-                            Macrame Adults
+                            Macrame
                         </Link>
                         <Link href="/macrame-kids" className="text-medium hover:text-primary font-medium transition-colors">
                             Macrame Kids
                         </Link>
-                        <Link href="/family-workshop" className="text-medium hover:text-primary font-medium transition-colors">
-                            Family Workshops
-                        </Link>
                         <Link href="/workshop-kids" className="text-medium hover:text-primary font-medium transition-colors">
-                            Kids Workshops
+                            Workshops for Kids
                         </Link>
-                        <Link href="/faq" className="text-medium hover:text-primary font-medium transition-colors">
+                        <Link href="/faq" className="text-medium hover:text-primary font-medium transition-colors self-center">
                             FAQ
                         </Link>
                         <Link href="/about" className="text-medium hover:text-primary font-medium transition-colors">
@@ -61,22 +58,19 @@ const Navbar = () => {
                     <div className="md:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-light-warm shadow-md">
                             <Link href="/wool-painting-adults" className="block px-3 py-2 text-medium hover:text-primary font-medium">
-                                Wool Painting Adults
+                                Wool Painting
                             </Link>
                             <Link href="/wool-painting-kids" className="block px-3 py-2 text-medium hover:text-primary font-medium">
                                 Wool Painting Kids
                             </Link>
                             <Link href="/macrame-adults" className="block px-3 py-2 text-medium hover:text-primary font-medium">
-                                Macrame Adults
+                                Macrame
                             </Link>
                             <Link href="/macrame-kids" className="block px-3 py-2 text-medium hover:text-primary font-medium">
                                 Macrame Kids
                             </Link>
                             <Link href="/workshop-kids" className="block px-3 py-2 text-medium hover:text-primary font-medium">
-                                Kids Projects
-                            </Link>
-                            <Link href="/family-workshop" className="block px-3 py-2 text-medium hover:text-primary font-medium">
-                                Kids Projects
+                                Workshops for Kids
                             </Link>
                             <Link href="/faq" className="block px-3 py-2 text-medium hover:text-primary font-medium">
                                 FAQ

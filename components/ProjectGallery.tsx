@@ -31,7 +31,27 @@ const ProjectGallery = ({ projects, caption }: ProjectGalleryProps) => {
         }
     }
 
-    const closeModal = () => {
+    const handleModalTouchStart = (e: React.TouchEvent) => {
+        e.stopPropagation() // Prevent touch event from reaching background
+        const timer = setTimeout(() => {
+            setSelectedImage(null)
+        }, 300) // 500ms long press to close
+        setLongPressTimer(timer)
+    }
+
+    const handleModalTouchEnd = (e: React.TouchEvent) => {
+        e.stopPropagation() // Prevent touch event from reaching background
+        if (longPressTimer) {
+            clearTimeout(longPressTimer)
+            setLongPressTimer(null)
+        }
+    }
+
+
+    const closeModal = (e?: React.MouseEvent) => {
+        if (e) {
+            e.stopPropagation()
+        }
         setSelectedImage(null)
     }
 
@@ -84,7 +104,7 @@ const ProjectGallery = ({ projects, caption }: ProjectGalleryProps) => {
                     className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center p-4"
                     onClick={closeModal}
                 >
-                    <div className="relative max-w-full max-h-full">
+                    <div className="relative cursor-pointer group max-w-full max-h-full">
                         <button
                             onClick={closeModal}
                             className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10"
@@ -100,6 +120,8 @@ const ProjectGallery = ({ projects, caption }: ProjectGalleryProps) => {
                             height={600}
                             className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
                             onClick={(e) => e.stopPropagation()}
+                            onTouchStart={handleModalTouchStart}
+                            onTouchEnd={handleModalTouchEnd}
                         />
                         <p className="text-white text-center mt-4 text-lg font-medium">{selectedImage.title}</p>
                     </div>

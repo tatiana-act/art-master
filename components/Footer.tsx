@@ -24,19 +24,18 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Art Categories</h4>
                         <ul className="space-y-2">
-                            <li><Link href="/wool-painting-adults" className="text-gray-300 hover:text-white transition-colors">Wool Painting Adults</Link></li>
+                            <li><Link href="/wool-painting-adults" className="text-gray-300 hover:text-white transition-colors">Wool Painting</Link></li>
                             <li><Link href="/wool-painting-kids" className="text-gray-300 hover:text-white transition-colors">Wool Painting Kids</Link></li>
                             <li><Link href="/macrame-adults" className="text-gray-300 hover:text-white transition-colors">Macrame</Link></li>
                             <li><Link href="/macrame-kids" className="text-gray-300 hover:text-white transition-colors">Macrame Kids</Link></li>
-                            <li><Link href="/family-workshop" className="text-gray-300 hover:text-white transition-colors">Family Workshops</Link></li>
-                            <li><Link href="/workshop-kids" className="text-gray-300 hover:text-white transition-colors">Kids workshops</Link></li>
+                            <li><Link href="/workshop-kids" className="text-gray-300 hover:text-white transition-colors">Workshops for Kids</Link></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Contact</h4>
                         <p className="text-gray-300 mb-2">Email: info@artmaster.com</p>
-                        <p className="text-gray-300">Phone: (555) 123-4567</p>
+                        <p className="text-gray-300">Phone: (737) 309-7849</p>
                     </div>
                 </div>
 

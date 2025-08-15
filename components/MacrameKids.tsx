@@ -3,16 +3,21 @@ import ProjectGallery from '@/components/ProjectGallery' // Adjust path if neede
 
 const MacrameKids = () => {
     const projects = [
-        { title: 'Mountain Landscape', image: '/images/macrame-kids-1.jpg' },
-        { title: 'Abstract Sunset', image: '/images/macrame-kids-2.jpg' },
-        { title: 'Forest Scene', image: '/images/macrame-kids-3.jpg' },
-        { title: 'Ocean Waves', image: '/images/macrame-kids-4.jpg' },
-        { title: 'Desert Dawn 1', image: '/images/macrame-kids-5.jpg' },
-        { title: 'Desert Dawn 2', image: '/images/macrame-kids-6.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/macrame-kids-7.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/macrame-kids-8.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/macrame-kids-9.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/macrame-kids-10.jpg' }
+        { title: 'Bunny', image: '/images/macrame-kids-1.jpg' },
+        { title: 'Easter bunnies', image: '/images/macrame-kids-23.jpg' },
+        { title: 'Little mermaid', image: '/images/macrame-kids-24.jpg' },
+        { title: 'Photo Wall Hanging', image: '/images/macrame-kids-4.jpg' },
+        { title: 'Little Fish', image: '/images/macrame-kids-5.jpg' },
+        { title: 'Decorative Hair Tie', image: '/images/macrame-kids-8.jpg' },
+        { title: 'Holiday Gnomes', image: '/images/macrame-kids-10.jpg' },
+        { title: 'Santa Claus', image: '/images/macrame-kids-12.jpg' },
+        { title: 'Handcrafted Owl', image: '/images/macrame-kids-14.jpg' },
+        { title: 'Key Fobs', image: '/images/macrame-kids-15.jpg' },
+        { title: 'Ballerina', image: '/images/macrame-kids-16.jpg' },
+        { title: 'Taba Squishy', image: '/images/macrame-kids-18.jpg' },
+        { title: 'Children’s Macramé Craft', image: '/images/macrame-kids-19.jpg' },
+        { title: 'Octopus', image: '/images/macrame-kids-20.jpg' },
+        { title: 'Tortoises', image: '/images/macrame-kids-22.jpg' }
     ]
 
     return (
@@ -46,8 +51,6 @@ const MacrameKids = () => {
                 </div>
 
                 <ProjectGallery projects={projects} caption="Featured Works" />
-
-                <ProjectGallery projects={projects} caption="Crafting Journey" />
 
                 <div className="mt-12 text-center">
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">

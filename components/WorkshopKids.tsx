@@ -3,35 +3,28 @@ import ProjectGallery from '@/components/ProjectGallery' // Adjust path if neede
 
 const WorkshopKids = () => {
     const projects = [
-        { title: 'Mountain Landscape', image: '/images/kids-workshop-1.jpg' },
-        { title: 'Abstract Sunset', image: '/images/kids-workshop-2.jpg' },
-        { title: 'Forest Scene', image: '/images/kids-workshop-3.jpg' },
-        { title: 'Desert Dawn 1', image: '/images/kids-workshop-5.jpg' },
-        { title: 'Desert Dawn 2', image: '/images/kids-workshop-6.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/kids-workshop-7.jpg' },
-        { title: 'Forest Scene', image: '/images/kids-workshop-13.jpg' },
-        { title: 'Ocean Waves', image: '/images/kids-workshop-14.jpg' },
-        { title: 'Desert Dawn 1', image: '/images/kids-workshop-15.jpg' },
-        { title: 'Abstract Sunset', image: '/images/kids-workshop-17.jpg' },
+        { title: 'Salt Dough Candle Holder', image: '/images/kids-workshop-1.jpg' },
+        { title: 'Kittens', image: '/images/kids-workshop-3.jpg' },
+        { title: 'Sunrise', image: '/images/kids-workshop-5.jpg' },
+        { title: 'Fairies', image: '/images/kids-workshop-6.jpg' },
+        { title: 'Angels', image: '/images/kids-workshop-7.jpg' },
+        { title: 'Little Heart, Mixed Technique', image: '/images/kids-workshop-13.jpg' },
+        { title: 'Weaving bowls', image: '/images/kids-workshop-14.jpg' },
+        { title: 'String Art Pumpkin', image: '/images/kids-workshop-15.jpg' },
+        { title: 'Fish bowl', image: '/images/kids-workshop-17.jpg' },
+        { title: 'Holiday Tree', image: '/images/kids-workshop-18.jpg' }
     ]
 
     const inMotion = [
-        { title: 'Ocean Waves', image: '/images/kids-workshop-4.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/kids-workshop-8.jpg' },
+        { title: 'Salt Dough Candle Holder', image: '/images/kids-workshop-2.jpg' },
+        { title: 'Little Heart, Mixed Technique', image: '/images/kids-workshop-4.jpg' },
+        { title: 'Weaving bowls', image: '/images/kids-workshop-8.jpg' },
         { title: 'Desert Dawn 3', image: '/images/kids-workshop-9.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/kids-workshop-10.jpg' },
-        { title: 'Mountain Landscape', image: '/images/kids-workshop-11.jpg' },
-        { title: 'Abstract Sunset', image: '/images/kids-workshop-12.jpg' },
-        { title: 'Abstract Sunset', image: '/images/kids-workshop-16.jpg' }
-    ]
-
-    const benefits = [
-        'Develops creativity and imagination',
-        'Improves fine motor skills',
-        'Builds confidence and self-esteem',
-        'Encourages problem-solving',
-        'Provides sensory experiences',
-        'Enhances focus and concentration'
+        { title: 'Weaving bowls', image: '/images/kids-workshop-10.jpg' },
+        { title: 'Peony Creations', image: '/images/kids-workshop-11.jpg' },
+        { title: 'Holiday Tree Decorations', image: '/images/kids-workshop-12.jpg' },
+        { title: 'Paper Collage', image: '/images/kids-workshop-16.jpg' },
+        { title: 'Little mermaid', image: '/images/kids-workshop-19.jpg' }
     ]
 
     return (
@@ -66,7 +59,8 @@ const WorkshopKids = () => {
                 </div>
 
                 <ProjectGallery projects={projects} caption="Project Gems" />
-                <ProjectGallery projects={projects} caption="Craft Process" />
+                <br />
+                <ProjectGallery projects={inMotion} caption="Making the Magic" />
 
                 <div className="mt-12 text-center">
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">
@@ -75,7 +69,7 @@ const WorkshopKids = () => {
                             Make your child's special day unforgettable with our craft party packages! We bring all supplies and lead fun activities.
                         </p>
                         <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
-                            Contact Us for Classes
+                            Contact me for Classes
                         </button>
                     </div>
                 </div>

@@ -80,11 +80,8 @@ const FAQ = () => {
                 <div className="mt-12 text-center">
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-300">
                         <h2 className="text-2xl font-semibold text-dark mb-4">Still Have Questions?</h2>
-                        <p className="text-medium mb-6">
-                            Don't hesitate to reach out! We're here to help you find the perfect creative experience.
-                        </p>
                         <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors shadow-md">
-                            Contact Us
+                            Contact Me
                         </button>
                     </div>
                 </div>
