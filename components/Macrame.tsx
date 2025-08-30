@@ -47,7 +47,7 @@ const Macrame = () => {
                             <h3 className="text-lg font-semibold mb-3">Basic Techniques</h3>
                             <p className="text-gray-600 mb-4">
                                 Start with fundamental knots and gradually build your skills to create complex patterns.
-                                We'll teach you proper cord selection and tension techniques.
+                                I'll teach you proper cord selection and tension techniques.
                             </p>
                             <ul className="grid grid-cols-2 gap-2">
                                 {knots.map((knot, index) => (
@@ -75,9 +75,13 @@ const Macrame = () => {
                         <p className="text-gray-600 mb-6">
                             Learn from experienced instructors in a relaxing environment. All skill levels welcome!
                         </p>
-                        <button className="bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-700 transition-colors">
-                            Book Workshop
-                        </button>
+                        <a
+                            href="mailto:orlowa.tatiana.lynx@gmail.com"
+                            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors inline-block"
+                            aria-label="Email to contact for art classes"
+                        >
+                            Contact me for Macrame Classes
+                        </a>
                     </div>
                 </div>
             </div>

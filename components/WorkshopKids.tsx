@@ -19,7 +19,7 @@ const WorkshopKids = () => {
         { title: 'Salt Dough Candle Holder', image: '/images/kids-workshop-2.jpg' },
         { title: 'Little Heart, Mixed Technique', image: '/images/kids-workshop-4.jpg' },
         { title: 'Weaving bowls', image: '/images/kids-workshop-8.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/kids-workshop-9.jpg' },
+        { title: 'Sunrise', image: '/images/kids-workshop-9.jpg' },
         { title: 'Weaving bowls', image: '/images/kids-workshop-10.jpg' },
         { title: 'Peony Creations', image: '/images/kids-workshop-11.jpg' },
         { title: 'Holiday Tree Decorations', image: '/images/kids-workshop-12.jpg' },
@@ -66,11 +66,15 @@ const WorkshopKids = () => {
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">
                         <h2 className="text-2xl font-semibold text-dark mb-4">Ready to Get Started?</h2>
                         <p className="text-medium mb-6">
-                            Make your child's special day unforgettable with our craft party packages! We bring all supplies and lead fun activities.
+                            Make your child's special day unforgettable with our craft party packages! All materials provided.
                         </p>
-                        <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
+                        <a
+                            href="mailto:orlowa.tatiana.lynx@gmail.com"
+                            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors inline-block"
+                            aria-label="Email to contact for art classes"
+                        >
                             Contact me for Classes
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

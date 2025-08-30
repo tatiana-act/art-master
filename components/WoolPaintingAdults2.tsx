@@ -9,7 +9,7 @@ const WoolPaintingAdults2 = () => {
         { title: 'Fall Stroll', image: '/images/watercolor-woolpainting-4.jpg' },
         { title: 'Dandelion Wine', image: '/images/watercolor-woolpainting-5.jpg' },
         { title: 'Springtime Highlands', image: '/images/watercolor-woolpainting-6.jpg' },
-        { title: 'Букет для мамы', image: '/images/watercolor-woolpainting-7.jpg' },
+        { title: 'Mother\'s day', image: '/images/watercolor-woolpainting-7.jpg' },
         { title: 'Peony Bliss', image: '/images/watercolor-woolpainting-9.jpg' },
         { title: 'Fiery beauty in the fall forest', image: '/images/watercolor-woolpainting-16.jpg' },
         { title: 'Seaside Dusk', image: '/images/watercolor-woolpainting-13.jpg' },
@@ -25,7 +25,7 @@ const WoolPaintingAdults2 = () => {
         { title: 'Art fair', image: '/images/watercolor-woolpainting-14.jpg' },
         { title: 'Bluebonnets workshop', image: '/images/watercolor-woolpainting-17.jpg' },
 
-        { title: 'Сделали wool bluebonnets', image: '/images/watercolor-woolpainting-18.jpg' },
+        { title: 'Creating wool bluebonnets', image: '/images/watercolor-woolpainting-18.jpg' },
         { title: 'Go ski', image: '/images/watercolor-woolpainting-8.jpg' },
         { title: 'Creating \"The Bluebonnets\"', image: '/images/watercolor-woolpainting-19.jpg' },
         { title: 'Creating \"The Bluebonnets\"', image: '/images/watercolor-woolpainting-20.jpg' },
@@ -57,9 +57,13 @@ const WoolPaintingAdults2 = () => {
                         <p className="text-medium mb-6">
                             Join our adult wool painting classes and discover this amazing art form. All materials provided.
                         </p>
-                        <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
-                            Contact me for Classes
-                        </button>
+                        <a
+                            href="mailto:orlowa.tatiana.lynx@gmail.com"
+                            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors inline-block"
+                            aria-label="Email to contact for art classes"
+                        >
+                            Contact me for Wool Painting Classes
+                        </a>
                     </div>
                 </div>
             </div>

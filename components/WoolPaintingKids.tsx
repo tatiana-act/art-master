@@ -3,22 +3,22 @@ import ProjectGallery from '@/components/ProjectGallery' // Adjust path if neede
 
 const WoolPaintingKids = () => {
     const projects = [
-        { title: 'Mountain Landscape', image: '/images/watercolor-woolpainting-kids-1.jpg' },
-        { title: 'Forest Scene', image: '/images/watercolor-woolpainting-kids-3.jpg' },
-        { title: 'Ocean Waves', image: '/images/watercolor-woolpainting-kids-4.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/watercolor-woolpainting-kids-7.jpg' },
-        { title: 'Abstract Sunset', image: '/images/watercolor-woolpainting-kids-10.jpg' },
-        { title: 'Desert Dawn 1', image: '/images/watercolor-woolpainting-kids-11.jpg' },
-        { title: 'Desert Dawn 2', image: '/images/watercolor-woolpainting-kids-12.jpg' },
+        { title: 'Holiday Tree', image: '/images/watercolor-woolpainting-kids-1.jpg' },
+        { title: 'Red peony', image: '/images/watercolor-woolpainting-kids-3.jpg' },
+        { title: 'Flower joy', image: '/images/watercolor-woolpainting-kids-4.jpg' },
+        { title: 'Mountains', image: '/images/watercolor-woolpainting-kids-7.jpg' },
+        { title: 'Holiday Tree #2', image: '/images/watercolor-woolpainting-kids-10.jpg' },
+        { title: 'Autumn in Zilker', image: '/images/watercolor-woolpainting-kids-11.jpg' },
+        { title: 'Baby animals', image: '/images/watercolor-woolpainting-kids-12.jpg' },
         { title: 'Snowman', image: '/images/watercolor-woolpainting-kids-15.jpg' }
     ]
 
     const projectsInAction = [
-        { title: 'Abstract Sunset', image: '/images/watercolor-woolpainting-kids-2.jpg' },
-        { title: 'Desert Dawn 1', image: '/images/watercolor-woolpainting-kids-5.jpg' },
-        { title: 'Desert Dawn 2', image: '/images/watercolor-woolpainting-kids-6.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/watercolor-woolpainting-kids-8.jpg' },
-        { title: 'Desert Dawn 3', image: '/images/watercolor-woolpainting-kids-9.jpg' }
+        { title: 'Creating the Red Peony', image: '/images/watercolor-woolpainting-kids-2.jpg' },
+        { title: 'Creating the Baby Animals', image: '/images/watercolor-woolpainting-kids-5.jpg' },
+        { title: 'Creating the Gingerbread House', image: '/images/watercolor-woolpainting-kids-6.jpg' },
+        { title: 'Creating the Holiday Tree', image: '/images/watercolor-woolpainting-kids-8.jpg' },
+        { title: 'Creating the Cactuses', image: '/images/watercolor-woolpainting-kids-9.jpg' }
     ]
 
     return (
@@ -48,9 +48,13 @@ const WoolPaintingKids = () => {
                         <p className="text-medium mb-6">
                             Come have fun at my wool painting classes for kids. All materials provided.
                         </p>
-                        <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
-                            Contact me for Classes
-                        </button>
+                        <a
+                            href="mailto:orlowa.tatiana.lynx@gmail.com"
+                            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors inline-block"
+                            aria-label="Email to contact for art classes"
+                        >
+                            Contact me for Wool Painting Classes
+                        </a>
                     </div>
                 </div>
             </div>

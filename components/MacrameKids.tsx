@@ -56,11 +56,15 @@ const MacrameKids = () => {
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">
                         <h2 className="text-2xl font-semibold text-dark mb-4">Ready to Get Started?</h2>
                         <p className="text-medium mb-6">
-                            Join our adult wool painting classes and discover this amazing art form. All materials provided.
+                            Come have fun at my wool painting classes for kids. All materials provided.
                         </p>
-                        <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
-                            Contact Us for Classes
-                        </button>
+                        <a
+                            href="mailto:orlowa.tatiana.lynx@gmail.com"
+                            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors inline-block"
+                            aria-label="Email to contact for art classes"
+                        >
+                            Contact me for Macrame Classes
+                        </a>
                     </div>
                 </div>
             </div>

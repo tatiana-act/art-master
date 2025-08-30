@@ -34,13 +34,9 @@ const Footer = () => {
 
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Contact</h4>
-                        <p className="text-gray-300 mb-2">Email: info@artmaster.com</p>
+                        <p className="text-gray-300 mb-2">Email: orlowa.tatiana.lynx@gmail.com</p>
                         <p className="text-gray-300">Phone: (737) 309-7849</p>
                     </div>
-                </div>
-
-                <div className="border-t border-gray-600 mt-8 pt-8 text-center">
-                    <p className="text-gray-300">&copy; 2024 Art Master. All rights reserved.</p>
                 </div>
             </div>
         </footer>
