@@ -1,6 +1,10 @@
+'use client'
 import Image from "next/image";
+import { useState } from "react";
 
 const About = () => {
+    const [showVideo, setShowVideo] = useState(false);
+
     return (
         <div className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,9 +12,6 @@ const About = () => {
                     <h1 className="text-4xl font-bold text-gray-900 mb-6">Meet Tatiana</h1>
                 </div>
                 <div className="mb-16">
-                    <h1 className="text-4xl md:text-5xl font-serif text-center text-gray-800 mb-12 tracking-tight">
-
-                    </h1>
                     <div className="grid md:grid-cols-5 gap-8 lg:gap-12 items-center">
                         {/* Image Section */}
                         <div className="md:col-span-2 relative aspect-square max-w-md mx-auto md:mx-0">
@@ -38,6 +39,30 @@ const About = () => {
                             </p>
                         </div>
                     </div>
+                    {/* Video Section */}
+                    <div className="mt-12 max-w-4xl mx-auto text-center">
+                        {!showVideo ? (
+                            <a
+                                href="#"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setShowVideo(true);
+                                }}
+                                className="text-amber-600 text-lg font-medium hover:underline transition-colors duration-300"
+                                aria-label="Show video about wool painting on KXAN"
+                            >
+                                Wool painting on KXAN
+                            </a>
+                        ) : (
+                            <div className="transition-opacity duration-500">
+                                <iframe id="nxs-video-iframe" data-frame-src="9969030" width="640" height="360"
+                                        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                                        layout="responsive"
+                                        src="https://redir1.kxan.com/nxs-video-player/eyJ2aWRlb19pZCI6Ijk5NjkwMzAiLCJwb3N0X2lkIjoyMzc5Mjk0LCJhZHRhZ191cmwiOiJhdHVfcDE/c3o9MXgxMDAwJml1PVwvNTY3OFwvbGluLmt4YW5cL3N0dWRpb181MTImaW1wbD1zJmdkZnBfcmVxPTEmZW52PXZwJm91dHB1dD12bWFwJnVudmlld2VkX3Bvc2l0aW9uX3N0YXJ0PTEmYWRfcnVsZT0xJmRlc2NyaXB0aW9uX3VybD1hdHVfcDImdmNvbnA9MiZjdXN0X3BhcmFtcz12aWQ9OTk2OTAzMCZzdGF0aW9uPUtYQU4mY21zaWQ9MjM3OTI5NCZwaWQ9MjM3OTI5NCZwZXJzX2NpZD1ueHMtNDAtYXJ0aWNsZS0yMzc5Mjk0JnZpZGNhdD1cL3N0dWRpb181MTImYm9iX2NrPVtib2JfY2tfdmFsXSZkX2NvZGU9MSZwYWdldHlwZT1zdG9yeSZobG1ldGE9d29vbCBwYWludGluZyB3b3Jrc2hvcCBhdCB0aGUgbmVpbGwgY29jaHJhbiBob3VzZSBtdXNldW0mYWE9ZiIsInBvc3RfdHlwZSI6InBvc3QiLCJpbmplY3RlZF92aWEiOiJhbXAiLCJhZF9wcm92aWRlciI6ImdhbSIsImluX3dwX2VkaXRvciI6ZmFsc2UsImFsbG93X2F1dG9wbGF5Ijp0cnVlLCJpc19saXZlYmxvZyI6ZmFsc2V9"
+                                        frameborder="0" allowFullScreen></iframe>
+                            </div>
+                        )}
+                    </div>
                     <div className="mt-8 text-center">
                         <a
                             href="mailto:orlowa.tatiana.lynx@gmail.com"
@@ -47,7 +72,6 @@ const About = () => {
                             Contact Me
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>
