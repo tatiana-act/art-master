@@ -4,21 +4,21 @@ import ProjectGallery from '@/components/ProjectGallery' // Adjust path if neede
 const WoolPaintingKids = () => {
     const projects = [
         { title: 'Holiday Tree', image: '/images/watercolor-woolpainting-kids-1.jpg' },
-        { title: 'Red peony', image: '/images/watercolor-woolpainting-kids-3.jpg' },
-        { title: 'Flower joy', image: '/images/watercolor-woolpainting-kids-4.jpg' },
-        { title: 'Mountains', image: '/images/watercolor-woolpainting-kids-7.jpg' },
-        { title: 'Holiday Tree #2', image: '/images/watercolor-woolpainting-kids-10.jpg' },
-        { title: 'Autumn in Zilker', image: '/images/watercolor-woolpainting-kids-11.jpg' },
+        { title: 'Red Peony', image: '/images/watercolor-woolpainting-kids-3.jpg' },
+        { title: 'Peony Joy', image: '/images/watercolor-woolpainting-kids-4.jpg' },
+        { title: 'Sea Dusk', image: '/images/watercolor-woolpainting-kids-7.jpg' },
+        { title: 'Christmas Tree', image: '/images/watercolor-woolpainting-kids-10.jpg' },
+        { title: 'Fall in Zilker Park', image: '/images/watercolor-woolpainting-kids-11.jpg' },
         { title: 'Baby animals', image: '/images/watercolor-woolpainting-kids-12.jpg' },
         { title: 'Snowman', image: '/images/watercolor-woolpainting-kids-15.jpg' }
     ]
 
     const projectsInAction = [
-        { title: 'Creating the Red Peony', image: '/images/watercolor-woolpainting-kids-2.jpg' },
-        { title: 'Creating the Baby Animals', image: '/images/watercolor-woolpainting-kids-5.jpg' },
-        { title: 'Creating the Gingerbread House', image: '/images/watercolor-woolpainting-kids-6.jpg' },
-        { title: 'Creating the Holiday Tree', image: '/images/watercolor-woolpainting-kids-8.jpg' },
-        { title: 'Creating the Cactuses', image: '/images/watercolor-woolpainting-kids-9.jpg' }
+        { title: 'Creating Red Peony', image: '/images/watercolor-woolpainting-kids-2.jpg' },
+        { title: 'Creating Baby Animals', image: '/images/watercolor-woolpainting-kids-5.jpg' },
+        { title: 'Creating Cupcake', image: '/images/watercolor-woolpainting-kids-6.jpg' },
+        { title: 'Creating Holiday Tree', image: '/images/watercolor-woolpainting-kids-8.jpg' },
+        { title: 'Cactuses and Holiday Tree', image: '/images/watercolor-woolpainting-kids-9.jpg' }
     ]
 
     return (
@@ -39,7 +39,7 @@ const WoolPaintingKids = () => {
                 </div>
 
                 <ProjectGallery projects={projects} caption="Art Samples" />
-
+<br />
                 <ProjectGallery projects={projectsInAction} caption="Making Magic" />
 
                 <div className="mt-12 text-center">

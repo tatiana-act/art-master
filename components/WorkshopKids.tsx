@@ -2,29 +2,29 @@
 import ProjectGallery from '@/components/ProjectGallery' // Adjust path if needed
 
 const WorkshopKids = () => {
-    const projects = [
-        { title: 'Salt Dough Candle Holder', image: '/images/kids-workshop-1.jpg' },
+    {/*const projects = [
+        { title: 'Salt Dough Candle Holder', image: '/images/kids-workshop-2.jpg' },
         { title: 'Kittens', image: '/images/kids-workshop-3.jpg' },
         { title: 'Sunrise', image: '/images/kids-workshop-5.jpg' },
         { title: 'Fairies', image: '/images/kids-workshop-6.jpg' },
         { title: 'Angels', image: '/images/kids-workshop-7.jpg' },
-        { title: 'Little Heart, Mixed Technique', image: '/images/kids-workshop-13.jpg' },
-        { title: 'Weaving bowls', image: '/images/kids-workshop-14.jpg' },
         { title: 'String Art Pumpkin', image: '/images/kids-workshop-15.jpg' },
-        { title: 'Fish bowl', image: '/images/kids-workshop-17.jpg' },
         { title: 'Holiday Tree', image: '/images/kids-workshop-18.jpg' }
-    ]
+    ]*/}
 
     const inMotion = [
-        { title: 'Salt Dough Candle Holder', image: '/images/kids-workshop-2.jpg' },
         { title: 'Little Heart, Mixed Technique', image: '/images/kids-workshop-4.jpg' },
         { title: 'Weaving bowls', image: '/images/kids-workshop-8.jpg' },
-        { title: 'Sunrise', image: '/images/kids-workshop-9.jpg' },
+        { title: 'Suncatcher', image: '/images/kids-workshop-9.jpg' },
         { title: 'Weaving bowls', image: '/images/kids-workshop-10.jpg' },
+        { title: 'Little Heart, Mixed Technique', image: '/images/kids-workshop-13.jpg' },
+        { title: 'Weaving bowls #2', image: '/images/kids-workshop-14.jpg' },
         { title: 'Peony Creations', image: '/images/kids-workshop-11.jpg' },
-        { title: 'Holiday Tree Decorations', image: '/images/kids-workshop-12.jpg' },
-        { title: 'Paper Collage', image: '/images/kids-workshop-16.jpg' },
-        { title: 'Little mermaid', image: '/images/kids-workshop-19.jpg' }
+        { title: 'Macrame Little mermaid', image: '/images/kids-workshop-19.jpg' },
+        { title: 'Easter Egg Decorations', image: '/images/kids-workshop-12.jpg' },
+        { title: 'Fish bowl', image: '/images/kids-workshop-17.jpg' },
+        { title: 'Creating Paper Basket', image: '/images/kids-workshop-16.jpg' },
+        { title: 'Salt Dough Candle Holder', image: '/images/kids-workshop-1.jpg' }
     ]
 
     return (
@@ -58,8 +58,8 @@ const WorkshopKids = () => {
                     </div>
                 </div>
 
-                <ProjectGallery projects={projects} caption="Project Gems" />
-                <br />
+                {/*<ProjectGallery projects={projects} caption="Project Gems" />*/}
+                {/*<br />*/}
                 <ProjectGallery projects={inMotion} caption="Making the Magic" />
 
                 <div className="mt-12 text-center">

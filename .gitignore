@@ -2,3 +2,7 @@
 /.next/
 /next-env.d.ts
 /package-lock.json
+/out/
+/.idea/modules.xml
+/.idea/art-master.iml
+/.idea/vcs.xml
