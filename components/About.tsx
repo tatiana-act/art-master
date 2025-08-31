@@ -2,15 +2,18 @@ import Image from "next/image";
 
 const About = () => {
     return (
-        //{<section className="py-16 bg-gradient-to-b from-gray-50 to-white">}
+        <div className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-12">
+                    <h1 className="text-4xl font-bold text-gray-900 mb-6">Meet Tatiana</h1>
+                </div>
                 <div className="mb-16">
                     <h1 className="text-4xl md:text-5xl font-serif text-center text-gray-800 mb-12 tracking-tight">
-                        Meet Tatiana
+
                     </h1>
-                    <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+                    <div className="grid md:grid-cols-5 gap-8 lg:gap-12 items-center">
                         {/* Image Section */}
-                        <div className="relative aspect-square max-w-md mx-auto md:mx-0">
+                        <div className="md:col-span-2 relative aspect-square max-w-md mx-auto md:mx-0">
                             <Image
                                 src="/images/bio-me.jpg"
                                 alt="Tatiana Orlova, Sensorial Art Teacher"
@@ -20,7 +23,7 @@ const About = () => {
                             />
                         </div>
                         {/* Text Section */}
-                        <div className="space-y-6 text-gray-700">
+                        <div className="md:col-span-3 space-y-6 text-gray-700">
                             <p className="text-lg md:text-xl leading-relaxed">
                                 <span className="font-semibold text-amber-600">Hello!</span> I’m Tatiana Orlova, a passionate sensorial art teacher based in Austin, where I’ve been inspiring creativity since moving here three years ago. With a Master’s degree in Education and hands-on experience in a Montessori preschool, I blend structured learning with boundless imagination, fostering curiosity and independence in every student.
                             </p>
@@ -47,7 +50,7 @@ const About = () => {
 
                 </div>
             </div>
-        //{</section>}
+        </div>
     );
 };
 
