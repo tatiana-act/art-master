@@ -10,8 +10,15 @@ module.exports = {
             colors: {
                 primary: '#8B4513',
                 secondary: '#D2691E',
-                accent: '#F4A460'
-            }
+                accent: '#F4A460',
+                cream: '#FFF8F0',
+                warm: {
+                    100: '#FFECD1',
+                    200: '#FFD6A3',
+                },
+                dark: '#2D1810',
+                medium: '#5C3305',
+            },
         },
     },
     plugins: [],

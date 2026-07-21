@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { CATEGORY_LINKS } from '@/config/navigation'
 
 const Footer = () => {
     return (
@@ -24,18 +25,20 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Art Categories</h4>
                         <ul className="space-y-2">
-                            <li><Link href="/wool-painting-adults" className="text-gray-300 hover:text-white transition-colors">Wool Painting</Link></li>
-                            <li><Link href="/wool-painting-kids" className="text-gray-300 hover:text-white transition-colors">Wool Painting Kids</Link></li>
-                            <li><Link href="/macrame-adults" className="text-gray-300 hover:text-white transition-colors">Macrame</Link></li>
-                            <li><Link href="/macrame-kids" className="text-gray-300 hover:text-white transition-colors">Macrame Kids</Link></li>
-                            <li><Link href="/workshop-kids" className="text-gray-300 hover:text-white transition-colors">Workshops for Kids</Link></li>
+                            {CATEGORY_LINKS.map((link) => (
+                                <li key={link.href}>
+                                    <Link href={link.href} className="text-gray-300 hover:text-white transition-colors">
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Contact</h4>
-                        <p className="text-gray-300 mb-2">Email: orlowa.tatiana.lynx@gmail.com</p>
-                        <p className="text-gray-300">Phone: (512) 801-4114</p>
+                        <p className="text-gray-300 mb-2">Email: tat2orlova@gmail.com</p>
+                        <p className="text-gray-300">Phone: (737) 309-7849</p>
                     </div>
                 </div>
             </div>
