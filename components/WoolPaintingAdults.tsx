@@ -1,128 +1,55 @@
 'use client'
-import Image from 'next/image'
-import {useState} from 'react'
-
+import ProjectGallery from '@/components/ProjectGallery' // Adjust path if needed
 
 const WoolPaintingAdults = () => {
-
-    const [selectedImage, setSelectedImage] = useState<{ src: string; title: string } | null>(null)
-    const [longPressTimer, setLongPressTimer] = useState<NodeJS.Timeout | null>(null)
-
     const projects = [
-        { title: 'Mountain Landscape', image: '/images/watercolor-woolpainting-1.jpg' },
-        { title: 'Abstract Sunset', image: '/images/watercolor-woolpainting-2.jpg' },
-        { title: 'Forest Scene', image: '/images/watercolor-woolpainting-3.jpg' },
-        { title: 'Ocean Waves', image: '/images/watercolor-woolpainting-4.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-5.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-6.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-7.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-8.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-9.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-10.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-11.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-12.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-13.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-14.jpg' },
-        { title: 'Desert Dawn', image: '/images/watercolor-woolpainting-15.jpg' },
-        { title: 'City Lights', image: '/images/watercolor-woolpainting-16.jpg' }
+        { title: 'Spring Irises', image: '/images/watercolor-woolpainting-1.jpg' },
+        { title: 'Waterfall', image: '/images/watercolor-woolpainting-2.jpg' },
+        { title: 'Sunrise In The Mountains', image: '/images/watercolor-woolpainting-3.jpg' },
+        { title: 'Fall Stroll', image: '/images/watercolor-woolpainting-4.jpg' },
+        { title: 'Dandelion Wine', image: '/images/watercolor-woolpainting-5.jpg' },
+        { title: 'Springtime Highlands', image: '/images/watercolor-woolpainting-6.jpg' },
+        { title: 'Mother\'s day', image: '/images/watercolor-woolpainting-7.jpg' },
+        { title: 'Peony Bliss', image: '/images/watercolor-woolpainting-9.jpg' },
+        { title: 'Fiery beauty in the fall forest', image: '/images/watercolor-woolpainting-16.jpg' },
+        { title: 'Seaside Dusk', image: '/images/watercolor-woolpainting-13.jpg' },
+        { title: 'Fall in the Zilker park', image: '/images/watercolor-woolpainting-15.jpg' },
+        { title: 'Ocean Waves', image: '/images/watercolor-woolpainting-25.jpg' },
+        { title: 'Fall in the Texas Hills', image: '/images/watercolor-woolpainting-26.jpg' }
     ]
 
-    const handleImageClick = (project: { title: string; image: string }) => {
-        setSelectedImage({ src: project.image, title: project.title })
-        console.log('Image clicked:', project);
-    }
+    const projectsInAction = [
+        { title: 'Creating "Peony Bliss"', image: '/images/watercolor-woolpainting-11.jpg' },
+        { title: 'Creating "Peony Bliss"', image: '/images/watercolor-woolpainting-10.jpg' },
+        { title: 'Creating "Peony Bliss"', image: '/images/watercolor-woolpainting-12.jpg' },
+        { title: 'Art fair', image: '/images/watercolor-woolpainting-14.jpg' },
+        { title: 'Bluebonnets workshop', image: '/images/watercolor-woolpainting-17.jpg' },
 
-    const handleImageTouchStart = (project: { title: string; image: string }) => {
-        const timer = setTimeout(() => {
-            setSelectedImage({ src: project.image, title: project.title })
-        }, 500) // 500ms long press
-        setLongPressTimer(timer)
-    }
-
-    const handleImageTouchEnd = () => {
-        if (longPressTimer) {
-            clearTimeout(longPressTimer)
-            setLongPressTimer(null)
-        }
-    }
-
-    const closeModal = () => {
-        setSelectedImage(null)
-    }
+        { title: 'Creating wool bluebonnets', image: '/images/watercolor-woolpainting-18.jpg' },
+        { title: 'Go ski', image: '/images/watercolor-woolpainting-8.jpg' },
+        { title: 'Creating "The Bluebonnets"', image: '/images/watercolor-woolpainting-19.jpg' },
+        { title: 'Creating "The Bluebonnets"', image: '/images/watercolor-woolpainting-20.jpg' },
+        { title: 'Creating wool picture', image: '/images/watercolor-woolpainting-21.jpg' },
+        { title: 'Woolpainting workshop', image: '/images/watercolor-woolpainting-22.jpg' },
+        { title: 'Woolpainting workshop', image: '/images/watercolor-woolpainting-23.jpg' },
+        { title: 'Making "Fall in the Zilker park"', image: '/images/watercolor-woolpainting-27.jpg' },
+        { title: 'My artwork at the exibition', image: '/images/watercolor-woolpainting-24.jpg' }
+    ]
 
     return (
         <div className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-dark mb-6">Wool Painting for Adults</h1>
-                    <p className="text-xl text-medium max-w-3xl mx-auto mb-8">
-                        Discover the therapeutic art of wool painting. Using natural wool fibers, create stunning landscapes
-                        and abstract pieces that bring warmth and texture to your home. Perfect for relaxation and mindfulness.
+                    <h1 className="text-4xl font-bold text-dark mb-6">Discover Wool Painting: Create with Ease!</h1>
+                    <p className="text-xl text-medium text-left mx-auto mb-8">
+                        As a wool painting art teacher, I’m excited to share this fun and unique way to make colorful artwork—no brushes or paints needed! In my classes, you’ll use soft, vibrant sheep’s wool, layering the fibers to create pictures bursting with color and texture.
+                        What makes wool painting so wonderful is how easy and forgiving it is. Made a mistake? No worries! You can adjust your artwork with confidence, as changes are simple to make. Even after your piece is framed, you can open it up, lift the glass, and add or remove wool to tweak your design whenever inspiration strikes. This freedom makes wool painting a joyful and creative experience for everyone, from beginners to seasoned artists!
                     </p>
                 </div>
 
-                <div className="mb-12">
-                    <h2 className="text-2xl font-semibold text-dark mb-6">What You'll Learn</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <div>
-                            <h3 className="text-lg font-semibold text-primary mb-3">Techniques</h3>
-                            <p className="text-medium mb-4">
-                                Master the art of layering wool fibers to create depth, texture, and beautiful color blends.
-                                Learn wet felting techniques and how to work with different wool types.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 className="text-lg font-semibold text-primary mb-3">Benefits</h3>
-                            <p className="text-medium mb-4">
-                                Wool painting is incredibly therapeutic and meditative. It helps reduce stress while creating
-                                beautiful artwork you can proudly display in your home.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 className="text-2xl font-semibold text-dark mb-8 text-center">Sample Projects</h2>
-                <p className="text-center text-medium mb-8 text-sm">Click images to view full size • Long press on mobile</p>
-                <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-                    {projects.map((project, index) => (
-                        <div key={index} className="bg-cream rounded-lg shadow-lg overflow-hidden border border-warm-200 break-inside-avoid mb-6">
-                            <div className="relative cursor-pointer group" onClick={() => handleImageClick(project)}>
-                                <Image
-                                    src={project.image}
-                                    alt={project.title}
-                                    width={400}
-                                    height={300}
-                                    className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
-                                    style={{ aspectRatio: 'auto' }}
-                                    onClick={() => handleImageClick(project)}
-                                    onTouchStart={() => handleImageTouchStart(project)}
-                                    onTouchEnd={handleImageTouchEnd}
-                                    onError={(e) => {
-                                        const target = e.target as HTMLElement;
-                                        target.style.display = 'none';
-                                        if (target.parentElement) {
-                                            target.parentElement.innerHTML = `
-                        <div class="w-full aspect-[4/3] bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center pointer-events-none">
-                          <span class="text-white font-medium">${project.title}</span>
-                        </div>
-                      `;
-                                        }
-                                    }}
-                                />
-                                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-                                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white bg-opacity-90 rounded-full p-2">
-                                        <svg className="w-6 h-6 text-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="p-4">
-                                <h3 className="text-lg font-semibold text-dark">{project.title}</h3>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                <ProjectGallery projects={projects} caption="Art Samples" />
+                <br />
+                <ProjectGallery projects={projectsInAction} caption="Crafting Journey" />
 
                 <div className="mt-12 text-center">
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">
@@ -130,43 +57,18 @@ const WoolPaintingAdults = () => {
                         <p className="text-medium mb-6">
                             Join our adult wool painting classes and discover this amazing art form. All materials provided.
                         </p>
-                        <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
-                            Contact Us for Classes
-                        </button>
+                        <a
+                            href="mailto:orlowa.tatiana.lynx@gmail.com"
+                            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors inline-block"
+                            aria-label="Email to contact for art classes"
+                        >
+                            Contact me for Wool Painting Classes
+                        </a>
                     </div>
                 </div>
             </div>
-
-            {/* Image Modal Popup */}
-            {selectedImage && (
-                <div
-                    className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center p-4"
-                    onClick={closeModal}
-                >
-                    <div className="relative max-w-full max-h-full">
-                        <button
-                            onClick={closeModal}
-                            className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10"
-                        >
-                            <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                        <Image
-                            src={selectedImage.src}
-                            alt={selectedImage.title}
-                            width={800}
-                            height={600}
-                            className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
-                            onClick={(e) => e.stopPropagation()}
-                        />
-                        <p className="text-white text-center mt-4 text-lg font-medium">{selectedImage.title}</p>
-                    </div>
-                </div>
-            )}
         </div>
     )
 }
 
-
-export default WoolPaintingAdults
+export default WoolPaintingAdults;

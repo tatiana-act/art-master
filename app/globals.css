@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.js";
 
 :root {
     --foreground-rgb: 0, 0, 0;
@@ -29,20 +28,4 @@ body {
 
 .hero-gradient {
     background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #F4A460 100%);
-}
-
-.text-dark {
-    color: #2D1810;
-}
-
-.text-medium {
-    color: #5C3305;
-}
-
-.bg-cream {
-    background-color: #FFF8F0;
-}
-
-.bg-light-warm {
-    background-color: #FFECD1;
 }
