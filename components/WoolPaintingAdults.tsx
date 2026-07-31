@@ -3,9 +3,9 @@ import ProjectGallery from '@/components/ProjectGallery' // Adjust path if neede
 
 const WoolPaintingAdults = () => {
     const projects = [
-        { title: 'Spring Irises', image: '/images/watercolor-woolpainting-1.jpg' },
-        { title: 'Waterfall', image: '/images/watercolor-woolpainting-2.jpg' },
-        { title: 'Sunrise In The Mountains', image: '/images/watercolor-woolpainting-3.jpg' },
+        /*{ title: 'Spring Irises', image: '/images/watercolor-woolpainting-1.jpg' },*/
+        /*{ title: 'Waterfall', image: '/images/watercolor-woolpainting-2.jpg' },*/
+        /*{ title: 'Sunrise In The Mountains', image: '/images/watercolor-woolpainting-3.jpg' },*/
         { title: 'Fall Stroll', image: '/images/watercolor-woolpainting-4.jpg' },
         { title: 'Dandelion Wine', image: '/images/watercolor-woolpainting-5.jpg' },
         { title: 'Springtime Highlands', image: '/images/watercolor-woolpainting-6.jpg' },
@@ -14,8 +14,8 @@ const WoolPaintingAdults = () => {
         { title: 'Fiery beauty in the fall forest', image: '/images/watercolor-woolpainting-16.jpg' },
         { title: 'Seaside Dusk', image: '/images/watercolor-woolpainting-13.jpg' },
         { title: 'Fall in the Zilker park', image: '/images/watercolor-woolpainting-15.jpg' },
-        { title: 'Ocean Waves', image: '/images/watercolor-woolpainting-25.jpg' },
-        { title: 'Fall in the Texas Hills', image: '/images/watercolor-woolpainting-26.jpg' }
+        /*{ title: 'Ocean Waves', image: '/images/watercolor-woolpainting-25.jpg' },*/
+        /*{ title: 'Fall in the Texas Hills', image: '/images/watercolor-woolpainting-26.jpg' }*/
     ]
 
     const projectsInAction = [

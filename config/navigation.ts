@@ -7,6 +7,7 @@ export const CATEGORY_LINKS = [
 ]
 
 export const ADDITIONAL_LINKS = [
+    { label: 'News', href: '/news' },
     { label: 'FAQ', href: '/faq' },
     { label: 'About', href: '/about' },
 ]

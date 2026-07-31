@@ -3,12 +3,12 @@ import ProjectGallery from '@/components/ProjectGallery' // Adjust path if neede
 
 const WoolPaintingKids = () => {
     const projects = [
-        { title: 'Holiday Tree', image: '/images/watercolor-woolpainting-kids-1.jpg' },
+        /*{ title: 'Holiday Tree', image: '/images/watercolor-woolpainting-kids-1.jpg' },*/
         { title: 'Red Peony', image: '/images/watercolor-woolpainting-kids-3.jpg' },
-        { title: 'Peony Joy', image: '/images/watercolor-woolpainting-kids-4.jpg' },
-        { title: 'Sea Dusk', image: '/images/watercolor-woolpainting-kids-7.jpg' },
+        /*{ title: 'Peony Joy', image: '/images/watercolor-woolpainting-kids-4.jpg' },*/
+        /*{ title: 'Sea Dusk', image: '/images/watercolor-woolpainting-kids-7.jpg' },*/
         { title: 'Christmas Tree', image: '/images/watercolor-woolpainting-kids-10.jpg' },
-        { title: 'Fall in Zilker Park', image: '/images/watercolor-woolpainting-kids-11.jpg' },
+        /*{ title: 'Fall in Zilker Park', image: '/images/watercolor-woolpainting-kids-11.jpg' },*/
         { title: 'Baby animals', image: '/images/watercolor-woolpainting-kids-12.jpg' },
         { title: 'Snowman', image: '/images/watercolor-woolpainting-kids-15.jpg' }
     ]

@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
     title: 'Art Master - Creative Arts & Crafts',
     description: 'Discover the joy of creating with wool painting, macrame, and art projects for all ages',
+    verification: {
+        google: 'B7Ct-qStJLf0MwYWx5zZwurbBgaNG14Zr_uRJkOJaiQ'
+    }
 }
 
 export default function RootLayout({
