@@ -69,17 +69,33 @@ export const NEWS: NewsItem[] = [
 ]
 
 /** The date a post leads with: the event date if there is one, else the post date. */
-function primaryDate(item: NewsItem): string {
+export function newsDate(item: NewsItem): string {
     return item.event?.date ?? item.published
 }
 
-// "Today" is fixed at build time, so the ordering below refreshes on each deploy.
-const today = new Date().toISOString().slice(0, 10)
+/** Where a post lives — a lone post is shown at /news itself, not at its own URL. */
+export function newsHref(item: NewsItem): string {
+    return NEWS.length < 2 ? '/news' : `/news/${item.slug}`
+}
+
+/**
+ * YYYY-MM-DD in local time. Deliberately not toISOString(), which is UTC and
+ * would roll over to tomorrow during the evening in Austin.
+ */
+export function toDateString(date: Date): string {
+    const month = String(date.getMonth() + 1).padStart(2, '0')
+    const day = String(date.getDate()).padStart(2, '0')
+
+    return `${date.getFullYear()}-${month}-${day}`
+}
+
+// Fixed at build time, so the ordering below refreshes on each deploy.
+const today = toDateString(new Date())
 
 /** Upcoming events first (soonest first), then everything else newest first. */
 export const NEWS_SORTED = [...NEWS].sort((a, b) => {
-    const aDate = primaryDate(a)
-    const bDate = primaryDate(b)
+    const aDate = newsDate(a)
+    const bDate = newsDate(b)
     const aUpcoming = aDate >= today
     const bUpcoming = bDate >= today
 
