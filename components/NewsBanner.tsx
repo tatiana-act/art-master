@@ -56,13 +56,13 @@ const NewsBanner = () => {
                 {/* The link fills the bar, so clicking anywhere but the close button opens the post. */}
                 <Link
                     href={newsHref(latest)}
-                    className="flex-1 min-w-0 py-3 flex flex-col sm:flex-row sm:items-baseline sm:gap-3 hover:underline"
+                    className="flex-1 min-w-0 py-3 flex flex-col sm:flex-row sm:items-baseline sm:gap-2 hover:underline"
                 >
-                    {/* Truncated so the bar stays one line on desktop and two on mobile. */}
-                    <span className="font-semibold min-w-0 truncate">{latest.title}</span>
-                    <span className="text-sm sm:text-base text-red-100 whitespace-nowrap">
-                        {formatEventDate(newsDate(latest))}
+                    <span className="font-semibold whitespace-nowrap flex-shrink-0">
+                        {formatEventDate(newsDate(latest))}:
                     </span>
+                    {/* Truncated so the bar stays one line on desktop and two on mobile. */}
+                    <span className="min-w-0 truncate">{latest.title}</span>
                 </Link>
 
                 <button
