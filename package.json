@@ -8,6 +8,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "comment": "overrides lift transitive deps pinned inside next past known advisories: postcss (GHSA-r28c-9q8g-f849 and others, next pins 8.4.31) and sharp (GHSA-f88m-g3jw-g9cj, next allows ^0.34.5).",
+  "overrides": {
+    "postcss": "^8.5.21",
+    "sharp": "^0.35.3"
+  },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
     "next": "^16.2.11",
