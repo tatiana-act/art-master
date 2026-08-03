@@ -51,7 +51,7 @@ const NewsBanner = () => {
     }
 
     return (
-        <div className="bg-red-600 text-white">
+        <div className="bg-blue-500 text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-2">
                 {/* The link fills the bar, so clicking anywhere but the close button opens the post. */}
                 <Link
@@ -62,14 +62,14 @@ const NewsBanner = () => {
                         {formatEventDate(newsDate(latest))}:
                     </span>
                     {/* Truncated so the bar stays one line on desktop and two on mobile. */}
-                    <span className="min-w-0 truncate">{latest.title}</span>
+                    <span className="font-semibold min-w-0 truncate">{latest.title}</span>
                 </Link>
 
                 <button
                     type="button"
                     onClick={dismiss}
                     aria-label="Dismiss announcement"
-                    className="flex-shrink-0 p-2 -mr-2 rounded hover:bg-red-700 transition-colors"
+                    className="flex-shrink-0 p-2 -mr-2 rounded hover:bg-blue-600 transition-colors"
                 >
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
