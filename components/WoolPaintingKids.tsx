@@ -4,13 +4,13 @@ import ProjectGallery from '@/components/ProjectGallery' // Adjust path if neede
 const WoolPaintingKids = () => {
     const projects = [
         /*{ title: 'Holiday Tree', image: '/images/watercolor-woolpainting-kids-1.jpg' },*/
-        { title: 'Red Peony', image: '/images/watercolor-woolpainting-kids-3.jpg' },
+        { title: 'Snowman', image: '/images/watercolor-woolpainting-kids-15.jpg' },
+        { title: 'Christmas Tree', image: '/images/watercolor-woolpainting-kids-10.jpg' },
         /*{ title: 'Peony Joy', image: '/images/watercolor-woolpainting-kids-4.jpg' },*/
         /*{ title: 'Sea Dusk', image: '/images/watercolor-woolpainting-kids-7.jpg' },*/
-        { title: 'Christmas Tree', image: '/images/watercolor-woolpainting-kids-10.jpg' },
         /*{ title: 'Fall in Zilker Park', image: '/images/watercolor-woolpainting-kids-11.jpg' },*/
         { title: 'Baby animals', image: '/images/watercolor-woolpainting-kids-12.jpg' },
-        { title: 'Snowman', image: '/images/watercolor-woolpainting-kids-15.jpg' }
+        { title: 'Red Peony', image: '/images/watercolor-woolpainting-kids-3.jpg' }
     ]
 
     const projectsInAction = [
@@ -25,22 +25,22 @@ const WoolPaintingKids = () => {
         <div className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-dark mb-6">Join My Wool Painting Workshops for Kids!</h1>
-        <p className="text-xl text-medium text-left mx-auto mb-8">
-            Dear Parents,<br />
-            I’m excited to invite your kids to my wool painting classes, where they’ll have a blast creating colorful artwork without any brushes or paints! Using soft, bright sheep’s wool, your children will layer fibers to make fun, textured pictures that pop with color. It’s a hands-on activity that kids love, perfect for sparking their creativity. Plus, this technique is completely safe—unlike needle felting, wool painting uses no needles, making it worry-free for young artists.
-        </p>
-        <p className="text-xl text-medium text-left mx-auto mb-8">
-            Wool painting is not only super fun but also great for your child’s growth. It helps them practice fine motor skills, like coordinating their hands and eyes, as they shape the wool. The soft, touchable wool is calming and keeps kids engaged, boosting their focus and imagination. Best of all, it’s easy to fix mistakes, so kids can try new ideas without worry. They can even change their artwork later, even after it’s framed!
-        </p>
-        <p className="text-xl text-medium text-left mx-auto mb-8">
-            My workshops are eco-friendly, creative, and rewarding. Your kids will leave with their own beautiful artwork and a big smile, having learned new skills. Sign up now to let them dive into the fun of wool painting!
-        </p>
+                    <h1 className="text-4xl font-bold text-dark mb-6">Join My Wool Painting Workshops for Kids!</h1>
+                    <p className="text-xl text-medium text-left mx-auto mb-8">
+                        Dear Parents,<br />
+                        I invite your children to explore wool painting—a fun, hands-on art form using soft, colorful sheep’s wool instead of paint or brushes. Kids layer fibers to create bright, textured artwork, all without needles, making it completely safe for young artists.
+                    </p>
+                    <p className="text-xl text-medium text-left mx-auto mb-8">
+                        This activity supports fine motor skills, hand-eye coordination, and creativity. The soft wool is calming and engaging, and because it’s easy to adjust, kids can experiment freely and even update their artwork later.
+                    </p>
+                    <p  className="text-xl text-medium text-left mx-auto mb-8">
+                        Eco-friendly and rewarding, each workshop lets kids create their own unique piece while building confidence and skills. Contact me to get started!
+                    </p>
                 </div>
-
-                <ProjectGallery projects={projects} caption="Art Samples" />
-<br />
+                <br />
                 <ProjectGallery projects={projectsInAction} caption="Making Magic" />
+                <br />
+                <ProjectGallery projects={projects} caption="Art Samples" />
 
                 <div className="mt-12 text-center">
                     <div className="bg-warm-100 rounded-lg p-8 border border-warm-200">
